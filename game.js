@@ -8,9 +8,17 @@ let rootNode = {
             no: null
         },
         no: {
-            question: "Er det en kat?",
-            yes: null,
-            no: null
+            question: "Har det en lang hale?",
+            yes: {
+                question: "Er det en kat?",
+                yes: null,
+                no: null
+            },
+            no: {
+                question: "Er det en hund?",
+                yes: null,
+                no: null
+            }
         }
     },
     no: {
@@ -20,21 +28,58 @@ let rootNode = {
             yes: {
                 question: "Er det en pingvin?",
                 yes: null,
-                no: null
+                no: {
+                    question: "Er det en and?",
+                    yes: null,
+                    no: null
+                }
             },
             no: {
-                question: "Er det en ørn?",
-                yes: null,
-                no: null
+                question: "Har det farverige fjer?",
+                yes: {
+                    question: "Er det en papegøje?",
+                    yes: null,
+                    no: null
+                },
+                no: {
+                    question: "Er det en ørn?",
+                    yes: null,
+                    no: null
+                }
             }
         },
         no: {
-            question: "Er det en slange?",
-            yes: null,
-            no: null
+            question: "Er det en koldblodig?",
+            yes: {
+                question: "Er det en slange?",
+                yes: null,
+                no: {
+                    question: "Er det en firben?",
+                    yes: null,
+                    no: null
+                }
+            },
+            no: {
+                question: "Er det et insekt?",
+                yes: {
+                    question: "Har det vinger?",
+                    yes: {
+                        question: "Er det en sommerfugl?",
+                        yes: null,
+                        no: null
+                    },
+                    no: {
+                        question: "Er det en myre?",
+                        yes: null,
+                        no: null
+                    }
+                },
+                no: null
+            }
         }
     }
 };
+
 
 let currentNode = rootNode;
 
