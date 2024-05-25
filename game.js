@@ -48,6 +48,7 @@ let rootNode = {
                 }
             }
         },
+        
         no: {
             question: "Er det en koldblodig?",
             yes: {
